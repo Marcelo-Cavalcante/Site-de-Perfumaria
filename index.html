@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeidianePerfumaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chango&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img class="img-logo" src="img/Logo (1).png" alt="Logo">
+            </div>
+            <nav>
+                <div class="menu">
+                    <a href="#menu">Home</a>
+                    <a href="#produtos">Produtos</a>
+                    <a href="#sobre">Sobre mim</a>
+                    <a href="#catalogo">Revista</a>
+                    <a href="#contatos">Contatos</a>
+                </div>
+                <div class="carrinho">
+                    <a href="carrinho.html">
+                        <img src="https://cdn-icons-png.flaticon.com/128/126/126083.png" alt="carrinho de compra">
+                    </a>
+                </div>
+
+                <div>
+                    <button class="btn-log">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="video-section" id="menu">
+            <div class="video_container">
+                <video autoplay muted loop playsinline>
+                    <source src="video/video propaganda.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="filter-card">
+                <button class="show-all">Todos os Produtos</button>
+                <button class="parfan-all">Perfumes</button>
+                <button class="corporal-all">Hidratantes e sabonetes</button>
+                <button class="kit-all">Kit Presente</button>
+            </div>
+        </section>
+        <!-- Cards de Produtos -->
+        <section class="produtos">
+
+        </section>
+
+        <!-- Linha Horizontal -->
+        <hr class="linha-separadora">
+
+        <!-- Sobre -->
+        <section class="sobre-container" id="sobre">
+            <h2 class="sobre-title">Sobre Mim</h2>
+            <div class="sobre">
+                <img class="img-sobre" src="img/img-sobre.jpg.jpeg" alt="Foto vendedora">
+                <p class="text-sobre">Olá! Me chamo Leidiane, sou casada, mãe de um filho lindo que é a luz da minha
+                    vida. Trabalho com
+                    muito carinho como revendedora da Natura e Avon, ajudando minhas clientes a se sentirem ainda mais
+                    bonitas e confiantes. Amo o que faço e estou sempre pronta para oferecer os melhores produtos, com
+                    atenção e dedicação. </p>
+            </div>
+        </section>
+
+        <!-- Linha Horizontal -->
+        <hr class="linha-separadora">
+
+        <!-- video com revista -->
+        <section class="catalogo" id="catalogo">
+            <!-- vídeo -->
+            <div class="video-container">
+                <h2 class="video-title">Assista ao vídeo:</h2>
+                <video width="560" height="315" controls>
+                    <source src="video/video propaganda.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+
+            </div>
+
+            <!-- Revista em PDF -->
+            <div>
+                <a href="documento/Revista.pdf" download class="botao-download">📄 Baixar Revista PDF</a>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Redes sociais e mais algum texto -->
+    <footer>
+        <div class="rede-sociais" id="contatos">
+            <!-- Instagram -->
+            <a target="_blank" href="https://www.instagram.com/lmvariedades930?igsh=MWU1eHNnZDZ2dGV4cA==">
+                <img src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" alt="Instagram">
+            </a>
+            <!-- Whatsaap -->
+            <a target="_blank"
+                href="https://api.whatsapp.com/send/?phone=5585998199411&text&type=phone_number&app_absent=0">
+                <img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="Whatsapp">
+            </a>
+            <!-- Facebook -->
+            <a target="_blank" href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt="Facebook">
+            </a>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Perfumaria da Leidiane. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+</body>
+
+<script src="produtos.js"></script>
+<script src="script.js"></script>
+
+
+</html>

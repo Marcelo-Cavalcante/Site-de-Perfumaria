@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria: #040303;
+    --cor-secundaria: #f0c5cb;
+    --cor-fundo: #f5f5f5;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--cor-secundaria);
+}
+
+.carrinho {
+    width: 400px;
+    height: min-content;
+    background: var(--cor-fundo);
+    padding: 35px;
+    margin: 20px 0;
+    border-radius: 10PX;
+}
+
+.carrinho .cabecalho-carrinho {
+    display: flex;
+}
+
+.carrinho .cabecalho-carrinho button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 50%;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-secundaria);
+    background: #dddde0;
+    border: 2px solid #ddddde;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.carrinho .cabecalho-carrinho button:hover {
+    color: #ffff;
+    background: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+}
+
+.carrinho .cabecalho-carrinho h3 {
+    margin: auto;
+    text-align: center;
+    font: 700 1.25rem 'Poppins';
+    color: var(--cor-primaria);
+}
+
+.carrinho .carrinho-item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #2a2f430f;
+}
+
+.carrinho .carrinho-item .imagem {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+}
+
+.carrinho .carrinho-item .imagem img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carrinho .carrinho-item .info {
+    width: 70%;
+    padding: 14px;
+}
+
+.button-delete {
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.carrinho .carrinho-item h4 {
+    color: var(--cor-primaria);
+    font: 700 1.25rem 'Poppins';
+}
+
+.carrinho .carrinho-item .detalhe {
+    display: flex;
+    gap: 10px;
+}
+
+.carrinho .carrinho-item .detalhe i {
+    color: #2a2f43d2;
+    font-size: 1.0625rem;
+    transform: translateY(3px);
+}
+
+.carrinho .carrinho-item .detalhe spam {
+    font: 600 0.75rem 'Poppins';
+    color: #2a204399;
+}
+
+.carrinho .carrinho-item .preco {
+    color: var(--cor-primaria);
+    font: 700 1.125rem 'Poppind';
+    margin-top: 8px;
+}
+
+.carrinho .carrinho-item .contador {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+
+.carrinho .carrinho-item .contador i {
+    cursor: pointer;
+    width: 25px;
+    height: 35px;
+    font-size: 0.75;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px;
+    background: var(--cor-secundaria);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+.carrinho .carrinho-item .contador span {
+    margin: 0 6px;
+    color: var(--cor-primaria);
+    font: 700 1.125rem 'Poppind';
+}
+
+.carrinho .pagar {
+    font: 500 1rem 'Poppins';
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 0;
+    color: #fff;
+    background: var(--cor-secundaria);
+    border-radius: 8px;
+    transform: .3s;
+}
+
+.carrinho .pagar:hover {
+    background: #2a2f43f1;
+}
